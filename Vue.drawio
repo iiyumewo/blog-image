@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-05T06:31:39.067Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="nJGpMb41ydk7Ag9gJ40H" version="20.0.4" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="5114" dy="1797" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-07-16T10:29:36.410Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="GrI8fOeZVIhqL6ThROVq" version="20.0.4" type="github" pages="3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Diff">
+    <mxGraphModel dx="3546" dy="1178" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -437,6 +437,48 @@
         <mxCell id="afDxlxrPL6SV1MimDMB3-46" value="involved node idx moved.&lt;br&gt;1. OStart→, ←NEnd&lt;br&gt;2. NStart→, ←OEnd&lt;br&gt;3. NStart→" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="830" y="1420" width="160" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LmafkUU3dox103_ZCiky" name="Compile">
+    <mxGraphModel dx="2719" dy="1178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="O0MiDGa6sDlfNX1t2Lfe-1" target="O0MiDGa6sDlfNX1t2Lfe-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-1" value="SFC 文件解析&lt;br&gt;vue-template-compiler 负责解析&lt;br&gt;提供&amp;nbsp;&lt;a style=&quot;background: 0px 0px rgb(255, 255, 255); box-sizing: border-box; outline: 0px; color: rgb(6, 174, 213); font-family: &amp;quot;Exo 2&amp;quot;, Helvetica, &amp;quot;Pingfang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; font-size: 16px;&quot; href=&quot;https://github.com/vuejs/vue/tree/dev/packages/vue-template-compiler#compilerparsecomponentfile-options&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot;&gt;&lt;code style=&quot;margin: 0px; padding: 0.2em 0px; font-family: Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 12px; box-sizing: border-box; background-color: rgb(248, 248, 248); border-radius: 3px; color: rgb(211, 64, 20);&quot;&gt;parseComponent(file, [options])&lt;/code&gt;&lt;/a&gt;&amp;nbsp;方法&lt;br&gt;packages/compiler-sfc/src/parseComponent &amp;gt; parseComponent" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="410" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="O0MiDGa6sDlfNX1t2Lfe-3" target="O0MiDGa6sDlfNX1t2Lfe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-3" value="&lt;span style=&quot;&quot;&gt;将 .vue 文件解析为&amp;nbsp;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;SFCDescriptor 实例&lt;br&gt;&lt;/span&gt;&lt;/span&gt;packages/compiler-sfc/src/parseComponent &amp;gt;&amp;nbsp;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: initial;&quot;&gt;SFCDescriptor&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;div style=&quot;color: rgb(212, 212, 212); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCDescriptor&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;source&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;filename&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;template&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCBlock&lt;/span&gt; | &lt;span style=&quot;color: #4ec9b0;&quot;&gt;null&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;script&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCScriptBlock&lt;/span&gt; | &lt;span style=&quot;color: #4ec9b0;&quot;&gt;null&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;scriptSetup&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCScriptBlock&lt;/span&gt; | &lt;span style=&quot;color: #4ec9b0;&quot;&gt;null&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;styles&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCBlock&lt;/span&gt;[]&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;customBlocks&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;SFCCustomBlock&lt;/span&gt;[]&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;errors&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;WarningMessage&lt;/span&gt;[]&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #dcdcaa;&quot;&gt;shouldForceReload&lt;/span&gt;: (&lt;span style=&quot;color: #9cdcfe;&quot;&gt;prevImports&lt;/span&gt;: &lt;span style=&quot;color: #4ec9b0;&quot;&gt;Record&lt;/span&gt;&amp;lt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;, &lt;span style=&quot;color: #4ec9b0;&quot;&gt;ImportBinding&lt;/span&gt;&amp;gt;) &lt;span style=&quot;color: #569cd6;&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0;&quot;&gt;boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#e1d5e7;labelBackgroundColor=none;labelBorderColor=none;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="112" width="540" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-6" value="调用 parseHTML&lt;br&gt;src/compiler/parser/html-parser &amp;gt; parseHTML&lt;br&gt;通过正则表达式一点点匹配并裁剪 template 的 HTML 部分&lt;br&gt;将 template 部分解析成 AST" style="rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontColor=#000000;fillColor=default;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="452" width="440" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="O0MiDGa6sDlfNX1t2Lfe-8" target="O0MiDGa6sDlfNX1t2Lfe-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-8" value="parse&lt;br&gt;packages/compiler-sfc/src/parse &amp;gt; parse" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="182.5" width="280" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="O0MiDGa6sDlfNX1t2Lfe-11" value="插件 conpiler-sfc 负责将 SFC 文件转换为 SFCDescriptor 实例（纯 JS 对象），为 Vue 项目本体中的 compiler 组件提供基础服务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="60" width="210" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="JdSO_Bw4TzbFCx77Tyez" name="Promise">
+    <mxGraphModel dx="946" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
